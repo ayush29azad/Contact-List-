@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+
+</title>
+<link rel ="stylesheet" href ="/css/home.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+
+    <body>
+        <div id ="main">
+<H1 id ="page-heading">
+    <i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;RCB Contact List</H1>
+    <H2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Play Bold</H2>
+<div>
+
+    <ul>
+<% for(let i of contact_list){ %>
+<div id ="list-style">
+<div id="name-style"><%= i.name %> </div>
+<div id= "phone-style"><%= i.phone %> </div>
+<div class ="delete-button">
+    <a href="/delete-contact/?id=<%= i.id %>">
+        <i class="fas fa-trash-alt" id="trash"></i>
+</a>
+</div>
+</div>
+
+<% } %>
+</ul>
+</div>
+<form action = "/ak" method ="POST">
+
+<input type = "text" name ="name" id="name-box" placeholder="Enter your name"required >
+<input type ="number" name ="phone" id="phone-box" placeholder="Enter your phone" required>
+<button type ="submit" id="add"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;Add Contact</button>
+
+</form>
+
+        </div>
+
+<script type ="text/javascript" src ="/js/home.js">
+
+</script>
+
+
+</body>
+</html>
+

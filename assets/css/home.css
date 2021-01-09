@@ -1,0 +1,145 @@
+
+
+
+
+
+body{
+
+    margin:0;
+    font-family :AppleSDGothicNeo-Regular;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+   background-image:url('https://wallpaperaccess.com/full/13324.jpg');
+
+}
+
+#page-heading
+{
+text-align: center;
+margin-top:25px;
+color:white;
+
+}
+
+#main
+{
+
+    color:white;
+    height:100%;
+    border :2px solid black;
+    background-image:url("https://fsa.zobj.net/crop.php?r=qqaKNyGr-GMWobrFrZY3FW7xGnqAiOdi-pa70Y2UtYmqnj3vaj0WSkP9HAery4tieUWZbYJ_enLB2t9ZPjS_zgbACOeCIQxxHe5Dd_u8woI6YcaL4oR590ILkic5zsz3kWAMqBstkKpZb5Q_") ;
+    padding-right: 40px;
+    opacity: 0.9;
+}
+#list-style
+{
+display: flex;
+justify-content: space-between;
+background-color:black ;
+padding:0.5px;
+margin-bottom:2px;
+width:600px;
+color:gold;
+}
+#list-style:hover
+{
+
+ /*background-color:rgba(0, 0, 0, 0.701);*/
+ background-color:rgba(0, 0, 0, 0.832)   ;
+}
+#name-style
+{
+    padding:5px;
+    
+}
+
+#phone-style
+{
+    padding:5px;
+   position: absolute;
+   left:50%;
+   
+}
+#trash
+{
+
+    color:white;
+    padding:5px;
+    
+}
+
+#trash:hover
+{
+    color:red;    
+
+}
+
+form
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#add
+{
+    background-color:gold;
+    border-radius: 5%;
+    padding :3px;
+    font-family :AppleSDGothicNeo-Regular;
+    box-shadow: grey;
+    width:120px;
+    height:30px ;
+    border-color: black;
+    margin-left: 47px;
+
+}
+#add:hover
+{
+    background-color:d43942;
+}
+
+#name-box
+{
+padding :3px;
+margin-left: 40px;
+width:200px;
+height:30px;
+text-align:center;
+border-radius: 5%;
+}
+
+#phone-box
+{
+    padding :3px;
+    
+    margin-left: 40px;
+    width:200px;
+    height:30px;
+    text-align:center;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 620px) {
+  #list-style
+{
+
+width:500px;
+margin-left:20px;
+}
+
+#name-box{
+
+    width:150px;
+}
+#phone-box{
+
+    width:150px;
+}
+
+
+
+
+  }
+
+
